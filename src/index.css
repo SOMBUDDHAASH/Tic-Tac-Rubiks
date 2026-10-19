@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; touch-action: none; }
+body { margin: 0; overflow: hidden; background: #2b2621; }
+.font-handwritten { font-family: 'Architects Daughter', 'Patrick Hand', cursive; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+.animate-pulse-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
